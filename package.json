@@ -1,12 +1,12 @@
 {
   "name": "type_api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
   "scripts": {
     "start:build": "tsc -p .",
     "start:dev": "nodemon --exec ts-node src/index.ts",
-    "start:prod": "tsc -p . && NODE_ENV=prod node dist/index.js"
+    "start": "tsc -p . && NODE_ENV=prod node dist/index.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
